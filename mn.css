@@ -31,6 +31,7 @@ body , html {
 p{
     font-size: 16px;
     color: var(--Dark-grayish-blue);
+    max-width: 680px;
 }
     /* header section */
 header{
@@ -63,12 +64,6 @@ header button{
 .cart ,.tog{
     margin-right: 19px;
 }
-.close{
-  display: none;
-}
-.tog{
-    opacity: 1;
-} 
 
 .menu{
     position: absolute;
@@ -82,18 +77,7 @@ header button{
     height:100vh;
     z-index: 999;
     box-shadow:100px 0px 100px var(--Black) ;
-    
-}
-.menu[data-men="true"]{
-    
     display: none;
-    
-}
-.tog[data-men="true"]{
-    opacity: 0;
-}
-.close[data-men="true"]{
-    display: block;
 }
 .menu li{
       list-style: none;
@@ -117,6 +101,7 @@ header button{
     }
     .sl img{
         width: 100%;
+        border-radius: 20px;
     }
     .btns{
         position: absolute;
@@ -183,6 +168,9 @@ header button{
        align-items: center;
        background: var(--Light-grayish-blue);
        padding:15px 30px;
+       max-width: 650px;
+       margin: 0 auto;
+       margin-bottom: 20px;
        border-radius: 10px;
     }
     .co button{
@@ -191,6 +179,8 @@ header button{
      }
     .atc{
         display: flex;
+        max-width: 650px;
+        margin: 0 auto;
         justify-content: center;
         background: var(--Orange);
         border-radius: 10px;
@@ -203,6 +193,99 @@ header button{
 
      /* media section */
 
-     @media(max-width:900px){
+     @media(min-width:1150px){
 
+
+                    /* nav section */
+
+        .conta{
+            margin: 0 auto;
+            max-width: 1210px;
+        }
+        .tog{
+            display: none;
+        }
+        .close{
+            display: none;
+        }
+        .menu{
+            opacity: 1; 
+            height: 55px;
+            position: relative;
+            box-shadow: none;
+            display: block;
+        }
+        .menu ul{
+            display: flex;
+            margin: 0 0px 0 40px;
+        }
+        .menu li{
+            padding: 0px 5px 15px 5px;
+            margin: 0 15px 0 15px;
+        }
+        .menu a{
+            font-size: 15px;
+            color: var(--Grayish-blue);
+        }
+        .menu li:hover{
+            border-bottom: 5px solid var(--Orange);
+            border-radius: 4px;
+
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-start;
+        }
+
+        .ava img , .cart img{
+            width: 28px;
+        }
+        .log{
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+                            /* img//tex section */
+
+            .mon{
+                display: flex;
+                justify-content: space-between;
+                max-width: 90%;
+                margin: 70px auto;
+                background: rgba(255, 0, 0, 0.246);
+            }
+            .mon .sl img{
+                border-radius: 30px;
+                width: 80%;
+            }
+            .mon .btns{
+                width: 80%;
+            }
+            .sr h1{
+                font-size: 40px;
+            }
+            .sr h1 ,.sr h5,.sr h3 ,.sr h6,.sr p {
+                max-width: 500px;
+            }
+            .co{
+                width: 165px;
+                margin: 0;
+            }
+            .atc{
+                width: 260px;
+                height: 57.5px;
+                margin: 0 0 0 20px;
+            }
+            .glp{
+                display: flex;
+                align-items: center;
+            }
+            .de{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .d h1,.d h3{
+                margin: 0 0 10px 0;
+            }
      }

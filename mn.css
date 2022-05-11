@@ -28,6 +28,10 @@ body , html {
 
 }
 
+.conta{
+    max-width: 650px;
+    margin: 0 auto;
+}
 p{
     font-size: 16px;
     color: var(--Dark-grayish-blue);
@@ -41,7 +45,8 @@ header{
     width: 100%;
     position: relative;
     padding: 10px 20px;
-    border-bottom: 1px solid var(--Dark-grayish-blue);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.237);
+
 }
  header a{
      color: black;
@@ -64,6 +69,7 @@ header button{
 .cart ,.tog{
     margin-right: 19px;
 }
+
 
 .menu{
     position: absolute;
@@ -92,6 +98,14 @@ header button{
 
     /* img // left section */
 
+    .pro1{
+        width: 20px;
+        margin: 30px 30px 5px 30px ;
+        background: rebeccapurple;
+    }
+    .sl ul li{
+        opacity: 0;
+    }
     .sl{
         display: flex;
         justify-content: space-between;
@@ -109,7 +123,10 @@ header button{
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        top: 0;
+        bottom: 0;
         padding: 17px;
+        max-width: 620px;
     }
     .btns button{
 
@@ -176,6 +193,7 @@ header button{
     .co button{
         background: transparent;
         border: none;
+        cursor: pointer;
      }
     .atc{
         display: flex;
@@ -185,6 +203,12 @@ header button{
         background: var(--Orange);
         border-radius: 10px;
         color:var(--Light-grayish-blue);
+        opacity: 0.7;
+
+    }
+    .atc:hover{
+        opacity: 1;
+        cursor: pointer;
     }
    .atc h4 ,i{
        margin-top: 15px;
@@ -193,7 +217,7 @@ header button{
 
      /* media section */
 
-     @media(min-width:1150px){
+     @media(min-width:970px){
 
 
                     /* nav section */
@@ -248,12 +272,37 @@ header button{
 
                             /* img//tex section */
 
+            .btns{
+                display: none;
+            }
+            .cen{
+                margin: 30px 40px;
+            }
+            .sl{
+                display: flex;
+                flex-direction: column;
+            }
+            .sl ul li{
+                opacity: 0.6;
+                list-style: none;
+                border-radius: 10px;
+            }
+            .sl ul{
+                display: flex;
+                width:360px;
+                margin-right: 70px;
+                margin: 0 auto;
+
+            }
+            .sl li:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
             .mon{
                 display: flex;
                 justify-content: space-between;
                 max-width: 90%;
-                margin: 70px auto;
-                background: rgba(255, 0, 0, 0.246);
+                margin: 40px auto;
             }
             .mon .sl img{
                 border-radius: 30px;

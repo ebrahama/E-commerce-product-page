@@ -20,7 +20,6 @@
 }
 
 body , html {
-
     font-family: 'Kumbh Sans', sans-serif;
     width: 100%;
     height: 100vh;
@@ -68,17 +67,77 @@ header button{
   }
 .cart ,.tog{
     margin-right: 19px;
+    position: relative;
 }
 
+.zaid{
+    position: absolute;
+    top: -9px;
+    right:-6px;
+    background: var(--Orange);
+    color: var(--White);
+    font-size: 12px;
+    padding: 1.5px 5px;
+    border-radius: 10px;
+    display: none;
+}
+.cartatc{
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 5px;
+    width: 350px;
+    background: var(--White);
+    z-index: 99;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
+}
+.cartatc h1{
+    margin: 20px 0px 15px 25px;
+}
+.ycie{
+     text-align: center;
+     margin: 70px;
+}
+.cmlo{
+    margin: 10px;
+    display: none;
+}
+.fog{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 10px;
+ padding: 15px;
+}
+.comasa{
+    width: 40px;
+    border-radius: 7px;
+}
+.tat{
+    text-align: center;
+}
+.tat button{
+ color: var(--White);
+ background: var(--Orange);
+ font-size: 20px;
+ text-align: center;
+ padding: 14px 100px;
+ border-radius: 10px;
+ cursor: pointer;
+ margin-bottom: 10px;
+}
 
 .menu{
-    position: absolute;
+    position:fixed;
     background-color: var(--White);
     display: flex;
     flex-direction: column;
     padding: 10px 40px;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 80%;
     height:100vh;
     z-index: 999;
@@ -94,6 +153,9 @@ header button{
     width: 40px;
     margin-top: 30px;
     margin-bottom: 60px;
+}
+.menu li:hover{
+    opacity: 0.5;
 }
 
     /* img // left section */
@@ -163,6 +225,9 @@ header button{
 
     }
  
+    #nag{
+        opacity: 0.3;
+    }
     .de ,.d{
         display: flex;
         justify-content: space-between;
@@ -254,7 +319,7 @@ header button{
         .menu li:hover{
             border-bottom: 5px solid var(--Orange);
             border-radius: 4px;
-
+            opacity: 1;
         }
         nav{
             display: flex;
@@ -276,7 +341,7 @@ header button{
                 display: none;
             }
             .cen{
-                margin: 30px 40px;
+                margin: 20px 40px;
             }
             .sl{
                 display: flex;
@@ -294,15 +359,20 @@ header button{
                 margin: 0 auto;
 
             }
-            .sl li:hover{
+            .sl li:hover {
                 opacity: 1;
                 cursor: pointer;
             }
+            .sl li img:hover{
+                border: 3px solid var(--Orange);
+            }
+
             .mon{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 max-width: 90%;
-                margin: 40px auto;
+                margin: 0px auto;
             }
             .mon .sl img{
                 border-radius: 30px;
@@ -317,6 +387,10 @@ header button{
             .sr h1 ,.sr h5,.sr h3 ,.sr h6,.sr p {
                 max-width: 500px;
             }
+            .d{
+                width: 225px;
+            }
+           
             .co{
                 width: 165px;
                 margin: 0;
